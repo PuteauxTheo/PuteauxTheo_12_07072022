@@ -1,6 +1,8 @@
 function Error() {
     return(
-        <div></div>
+        <div>
+            
+        </div>
     )
 }
 
