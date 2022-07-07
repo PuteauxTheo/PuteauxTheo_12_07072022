@@ -1,0 +1,22 @@
+header{
+    background: $blackColor;
+    .nav-content{
+        display: flex;
+        &-logo{
+            height: 60px;
+        }
+    
+        &-list{
+            color: white;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            align-items: center;
+            
+        }
+    }
+}
+
+
+
