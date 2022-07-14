@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom'
 import './style/css/style.css'
 import Home from './pages/Home.jsx'
 import Error from './pages/Error.jsx'
@@ -14,8 +14,9 @@ root.render(
     <Router>    
         <Header/>    
         <Routes>
-          <Route path='/' element={<Home />} />    
+          <Route path='/user/:id' element={<Home />} />    
           <Route path="*" element={<Error />}/>
+          <Route path='/' element={<Navigate to='user/12'/>} />
         </Routes>
     </Router>
   </React.StrictMode>
