@@ -8,17 +8,113 @@ html, body {
   margin: 0px;
 }
 
-.poids-chart {
+.content-personnalStat {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 1100px;
+  top: 200px;
+}
+.content-personnalStat-card {
+  display: flex;
+  background-color: #FBFBFB;
+  padding: 32px;
+  margin: 20px 10px;
+}
+.content-personnalStat-card-icon {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.content-personnalStat-card-icon > img {
+  height: 19px;
+  width: 19px;
+}
+.content-personnalStat-card .calories {
+  background-color: rgba(255, 0, 0, 0.07);
+}
+.content-personnalStat-card .proteines {
+  background-color: rgba(74, 184, 255, 0.1);
+}
+.content-personnalStat-card .glucides {
+  background-color: rgba(249, 206, 35, 0.1);
+}
+.content-personnalStat-card .lipides {
+  background-color: rgba(253, 81, 129, 0.1);
+}
+.content-personnalStat-card-text {
+  margin: auto;
+}
+.content-personnalStat-card-text-unit {
+  font-size: 20px;
+  margin: auto 20px;
+}
+.content-personnalStat-card-text-name {
+  font-size: 14px;
+  margin: auto 20px;
+}
+
+.radar-chart {
   background-color: #282D30;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.kpi-chart {
+  position: relative;
+  margin: 5px;
+  border-radius: 5px;
+}
+.kpi-chart .title-chart {
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+.kpi-chart-text {
+  position: absolute;
+  top: 35%;
+  left: 33%;
+  width: 110px;
+}
+.kpi-chart-text-percent {
+  font-size: 26px;
+  text-align: center;
+  margin: 5px;
+}
+.kpi-chart-text-name {
+  font-size: 16px;
+  text-align: center;
+  margin: 5px;
+}
+
+.poids-chart {
+  margin: 30px 10px;
 }
 
 .objectif-chart {
   background-color: red;
+  margin: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.objectif-chart-title {
+  color: white;
+  opacity: 0.5;
+  font-size: 15px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 150px;
 }
 
 .hello-content {
   position: absolute;
-  left: 120px;
+  left: 200px;
 }
 .hello-content .hello {
   font-size: 48px;
@@ -75,16 +171,25 @@ header .nav-content-list {
   border-radius: 6px;
 }
 
-.content-chart {
+.main-content {
+  position: relative;
+}
+
+.container-chart {
   display: flex;
   position: absolute;
   flex-direction: column;
-  top: 250px;
-  left: 150px;
+  top: 200px;
+  left: 200px;
 }
-.content-chart .content-chart-performance {
+.container-chart .content-chart-performance {
   display: flex;
   flex-direction: row;
+}
+
+.container-personnalStat {
+  display: flex;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
