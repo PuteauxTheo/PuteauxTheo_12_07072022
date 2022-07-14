@@ -8,6 +8,14 @@ html, body {
   margin: 0px;
 }
 
+.poids-chart {
+  background-color: #282D30;
+}
+
+.objectif-chart {
+  background-color: red;
+}
+
 .hello-content {
   position: absolute;
   left: 120px;
@@ -65,6 +73,18 @@ header .nav-content-list {
   height: 64px;
   width: 64px;
   border-radius: 6px;
+}
+
+.content-chart {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 250px;
+  left: 150px;
+}
+.content-chart .content-chart-performance {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
