@@ -1,0 +1,11 @@
+.content-chart{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 250px;
+    left: 150px;
+    .content-chart-performance{
+        display: flex;
+        flex-direction: row;
+    }
+}
