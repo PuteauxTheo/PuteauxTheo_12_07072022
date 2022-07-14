@@ -1,11 +1,21 @@
-.content-chart{
+.main-content{
+    position: relative;
+}
+
+.container-chart{
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: 250px;
-    left: 150px;
+    top: 200px;
+    left: 200px;
     .content-chart-performance{
         display: flex;
         flex-direction: row;
     }
+}
+
+.container-personnalStat{
+    display: flex;
+    position: absolute;
+
 }
