@@ -27,8 +27,9 @@ function getUserPerformance(id){
 const getData = async (id, categorie) => {
     switch (categorie) {
         case 'activity': return getUserActivity(id);
-        case 'averagesession': return getUserAverageSessions(id);
+        case 'average-sessions': return getUserAverageSessions(id);
         case 'performance': return getUserPerformance(id);
+        case 'main': return getUserMainData(id);
         default: return getUserMainData(id);
     }
 }
