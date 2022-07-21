@@ -3,7 +3,9 @@ import iconProteines from '../assets/iconProteines.svg'
 import iconGlucides from '../assets/iconGlucides.svg'
 import iconLipides from '../assets/iconLipides.svg'
 
-function PersonnalStat() {
+function PersonnalStat( {dataPersonnal} ) {
+
+
     return(
         <div className='content-personnalStat'>
             <div className='content-personnalStat-card'>
@@ -11,7 +13,7 @@ function PersonnalStat() {
                     <img src={iconCalories} alt=""/>                    
                 </div>
                 <div className='content-personnalStat-card-text'>
-                    <p className='content-personnalStat-card-text-unit'>1,930kCal</p>
+                    <p className='content-personnalStat-card-text-unit'>{dataPersonnal.calorieCount}kCal</p>
                     <p className='content-personnalStat-card-text-name'>Calories</p>
                 </div>
             </div>
@@ -20,7 +22,7 @@ function PersonnalStat() {
                     <img src={iconProteines} alt=""/>                    
                 </div>
                 <div className='content-personnalStat-card-text'>
-                    <p className='content-personnalStat-card-text-unit'>155g</p>
+                    <p className='content-personnalStat-card-text-unit'>{dataPersonnal.proteinCount}g</p>
                     <p className='content-personnalStat-card-text-name'>Proteines</p>
                 </div>
             </div>
@@ -29,7 +31,7 @@ function PersonnalStat() {
                     <img src={iconGlucides} alt=""/>                    
                 </div>
                 <div className='content-personnalStat-card-text'>
-                    <p className='content-personnalStat-card-text-unit'>290g</p>
+                    <p className='content-personnalStat-card-text-unit'>{dataPersonnal.carbohydrateCount}g</p>
                     <p className='content-personnalStat-card-text-name'>Glucides</p>
                 </div>
             </div>
@@ -38,7 +40,7 @@ function PersonnalStat() {
                     <img src={iconLipides} alt=""/>                    
                 </div>
                 <div className='content-personnalStat-card-text'>
-                    <p className='content-personnalStat-card-text-unit'>50g</p>
+                    <p className='content-personnalStat-card-text-unit'>{dataPersonnal.lipidCount}g</p>
                     <p className='content-personnalStat-card-text-name'>Lipides</p>
                 </div>
             </div>
