@@ -7,7 +7,7 @@ function getUserMainData(id){
 }
 
 function getUserActivity(id){
-    const data = USER_ACTIVITY.find( value => value.id.toString() === id)
+    const data = USER_ACTIVITY.find( value => value.userId.toString() === id)
     const dataActivity = {data}
     return dataActivity;
 }
@@ -20,8 +20,8 @@ function getUserAverageSessions(id){
 
 function getUserPerformance(id){
     const data = USER_PERFORMANCE.find( value => value.userId.toString() === id)
-    const dataPerfomance = {data};
-    return dataPerfomance;
+    const dataPerformance = {data};
+    return dataPerformance;
 }
 
 const getData = async (id, categorie) => {
