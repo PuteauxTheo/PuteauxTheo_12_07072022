@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import getData from '../service/serviceMock.js'
+//import getData from '../service/serviceMock.js'
+import getFetchData from '../service/serviceAPI.js'
 import Hello from '../components/Hello.jsx'
 import KPI from '../components/KPI.jsx'
 import Menu from '../components/Menu.jsx'
@@ -18,20 +19,21 @@ function Home() {
 
 
     useEffect(() => {
-        getData(id)
+        getFetchData(id, 'main')
             .then(data => setUserMainData(data))
             .catch( err => console.log(" Erreur survenue lors de récupération des données ", err))
-        getData(id, 'activity')
+        getFetchData(id, 'activity')
             .then(data => setUserDataActivity(data))
             .catch( err => console.log(" Erreur survenue lors de la recuperation des données Activity", err))
-        getData(id, 'averagesession')
+        getFetchData(id, 'average-sessions')
             .then(data => setUserDataAverageSession(data))
             .catch( err => console.log(" Erreur survenu lors de la récuperation des données AverageSession", err))
-        getData(id, 'performance')
+        getFetchData(id, 'performance')
             .then(data => setUserDataPerformance(data))
             .catch( err => console.log(" Erreur survenu lors de la recuperation des données Performance", err))
     }, [id]);
     
+    console.log(getFetchData(id,'main'))
     return (
         <div>
             <Menu/>
