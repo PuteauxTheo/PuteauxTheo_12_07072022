@@ -4,7 +4,6 @@ import { LineChart, Line, XAxis } from "recharts";
 
 function AverageSession( { dataAverageSession }) {
 
-  console.log(dataAverageSession)
 
   return (
     <div className="objectif-chart">

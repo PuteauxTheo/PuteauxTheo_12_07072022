@@ -1,9 +1,9 @@
 import { USER_MAIN_DATA , USER_ACTIVITY, USER_AVERAGE_SESSIONS, USER_PERFORMANCE } from '../dataMock/mock.js'
 
 /**
- * 
- * @param {*} id 
- * @returns 
+ * Get the main data of user from mock data 
+ * @param {string} id user Id
+ * @returns main data
  */
 function getUserMainData(id){
     const data = USER_MAIN_DATA.find( value => value.id.toString() === id );
@@ -12,9 +12,9 @@ function getUserMainData(id){
 }
 
 /**
- * 
- * @param {*} id 
- * @returns 
+ * Get the activity data of user from mock data
+ * @param {string} id user Id
+ * @returns activity data
  */
 function getUserActivity(id){
     const data = USER_ACTIVITY.find( value => value.userId.toString() === id)
@@ -23,9 +23,9 @@ function getUserActivity(id){
 }
 
 /**
- * 
- * @param {*} id 
- * @returns 
+ * Get the average-session data of user from mock data
+ * @param {string} id user Id
+ * @returns average-sessions data
  */
 function getUserAverageSessions(id){
     const data = USER_AVERAGE_SESSIONS.find( value => value.userId.toString() === id)
@@ -34,9 +34,9 @@ function getUserAverageSessions(id){
 }
 
 /**
- * 
- * @param {*} id 
- * @returns 
+ * Get the performance data of user from mock data
+ * @param {string} id user Id
+ * @returns performace data
  */
 function getUserPerformance(id){
     const data = USER_PERFORMANCE.find( value => value.userId.toString() === id)
@@ -45,10 +45,10 @@ function getUserPerformance(id){
 }
 
 /**
- * 
- * @param {*} id 
- * @param {*} categorie 
- * @returns 
+ * Get data of user according to categorie selected
+ * @param {string} id user Id
+ * @param {string} categorie categorie selected
+ * @returns mock data who match with categorie
  */
 const getData = async (id, categorie) => {
     switch (categorie) {

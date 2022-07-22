@@ -3,9 +3,15 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "rec
 
 function Activity( {dataActivity} ) {
 
-  function transformDateToDay(day){
-    const dayTransformed = new Date(day)
-    return dayTransformed.getDate();
+  /**
+   * Get the number day of the date 
+   * @param {string} date 
+   * @returns number 
+   */
+  function transformDateToDay(date){
+    const day = new Date(date)
+    return day.getDate();
+    
   }
 
   return (

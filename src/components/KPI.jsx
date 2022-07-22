@@ -3,8 +3,11 @@ import { RadialBarChart, RadialBar, PolarAngleAxis } from 'recharts';
 
 function KPI( {dataKPI} ) {
     
+    /**
+     * render todayScore in percent 
+     */
     const percentScore = dataKPI.todayScore * 100 ;
-    console.log(dataKPI)
+
     return (
         <div className='kpi-chart'>
             <h3 className='title-chart'>Score</h3>
