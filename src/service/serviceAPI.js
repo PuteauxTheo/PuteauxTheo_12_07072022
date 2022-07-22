@@ -1,10 +1,17 @@
-const urlBase = "localhost:3000/user";
+const urlBase = "http://localhost:3000/user";
 
-const getFetchData = async (id, categorie) => {
-    let urlComplet = categorie ? urlBase + `/${id}/${categorie}` : urlBase + `/${id}/`
+/**
+ * 
+ * @param {*} id 
+ * @param {*} categorie 
+ * @returns 
+ */
+const getData = async (id, categorie) => {
+    let urlComplet = categorie ? urlBase + `/${id}/${categorie}` : urlBase + `/${id}`
+    console.log("url "+urlComplet)
     const data = await fetch(urlComplet)
     const dataFetch = await data.json()
     return dataFetch;
 }
 
-export default getFetchData
+export default getData
